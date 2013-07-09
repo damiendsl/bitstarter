@@ -1,9 +1,9 @@
 var express = require('express');
 var fs= require('fs');
 var app = express.createServer(express.logger());
-var bufferIndex= fs.readFile('index.html');
 app.get('/', function(request, response) {
-  response.send(bufferIndex.toString());
+  var bindex=fs.readFileSync('index.html');
+  response.send(bindex.toString());
 });
 
 var port = process.env.PORT || 5000;
