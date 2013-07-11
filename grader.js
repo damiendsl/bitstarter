@@ -26,7 +26,7 @@ var program = require('commander');
 var cheerio = require('cheerio');
 var rest = require('restler');
 var HTMLFILE_DEFAULT = "index.html";
-var URLFILE_DEFAULT = "http://frozen-stream-9112.herokuapp.com/";
+var URLFILE_DEFAULT = "http://pure-earth-1529.herokuapp.com/";
 var CHECKSFILE_DEFAULT = "checks.json";
 
 var assertFileExists = function(infile) {
